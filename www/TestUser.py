@@ -14,7 +14,7 @@ from models import User, Blog, Comment
 
 def test(loop):
     yield from orm.create_pool(loop=loop, user='root', password='root', db='awesome')
-    u = User(name='LC', email='ahlc@sina.cn', passwd='LC123', image='about:blank')
+    u = User(name='LC1', email='ahlc1@sina.cn', passwd='LC1234', image='about:blank')
     yield from u.save()
 
 
